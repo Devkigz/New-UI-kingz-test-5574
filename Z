@@ -1,0 +1,43 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/CustomFIeld/main/RayField.lua'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "VERIFICATION M",
+   LoadingTitle = "JUST DO IT",
+   LoadingSubtitle = "BT LUASCRIPTS",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "VERYFICATION"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "sirius", -- The Discord invite code, do not include discord.gg/
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "VERYFY KEY",
+      Subtitle = "Key VERYFY",
+      Note = "Join the discord (discord.gg/sirius)",
+      FileName = "V_90 KEY VERYFY",
+      SaveKey = true,
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = "SD8"
+   }
+})
+
+local Tab = Window:CreateTab("its main", 4483362458) -- Title, Image
+
+Window:Prompt({
+	Title = 'E',
+	SubTitle = 'Enabled',
+	Content = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+	Actions = {
+		Accept = {
+			Name = 'Accept',
+			Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Devkigz/CHINAHUB/main/PROTON%20HUB",true))();
+			end,
+		}
+	}
+})
