@@ -20,7 +20,7 @@ local Window = Rayfield:CreateWindow({
       Subtitle = "Key VERYFY",
       Note = "Join the discord (discord.gg/sirius)",
       FileName = "V_90 KEY VERYFY",
-      SaveKey = true,
+      SaveKey = false,
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
       Key = "SD8"
    }
